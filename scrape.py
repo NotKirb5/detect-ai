@@ -27,7 +27,7 @@ while i < 150:
     
     posts = client.search(["-ai_generated"], page_id=int(posts_scaned/100), limit=100)
     
-    for p in posts[:99]:
+    for p in posts[(posts_scaned%100):99]:
         posts_scaned += 1
         if p.content_type != 'image':
             print(f'post is a {p.content_type}')
