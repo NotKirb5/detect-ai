@@ -1,0 +1,7 @@
+numpy
+pandas
+requests
+rule34Py
+opencv-python
+tensorflow
+scikit-learn
