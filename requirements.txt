@@ -5,3 +5,4 @@ rule34Py
 opencv-python
 tensorflow
 scikit-learn
+dotenv

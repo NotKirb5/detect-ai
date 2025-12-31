@@ -3,6 +3,6 @@ import pandas as pd
 import imgclass
 
 classifier = imgclass.ImageClassifier(img_size=(224,224))
-classifier.load_model('my_image_classifier.keras')
-label, confidence = classifier.predict_image('testai2.png')
+classifier.load_model('detector.keras')
+label, confidence = classifier.predict_image('testnsfw/testai.jpg')
 print(f"Predicted: {label} (confidence: {confidence:.2%})")
